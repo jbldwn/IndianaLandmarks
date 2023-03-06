@@ -39,3 +39,30 @@
     }
 }
 
+@media (max-width: 600px){
+    
+    .home-sites{
+        margin-top: 50px;
+
+        .site{
+            width: 100%;
+            #site-img{
+                height: 300px;
+                width: 100%;
+            }
+            #site-name{
+                width: 100%;
+            }
+            #site-add{
+                width: 100%;
+            }
+        }
+        
+        
+    }
+    
+    
+}
+
+
+
