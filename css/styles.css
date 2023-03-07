@@ -192,6 +192,15 @@ body {
   height: 100%;
 }
 
+.containter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .hero {
   background-color: aqua;
   height: 500px;
