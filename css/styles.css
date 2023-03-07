@@ -136,10 +136,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 1000px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 1500px;
 }
 
 .mobile-menu {
@@ -753,7 +753,7 @@ body {
     width: 350px;
   }
   .ld .ld-sites {
-    height: 600px;
+    height: 100%;
     width: 350px;
   }
 }
