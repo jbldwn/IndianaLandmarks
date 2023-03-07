@@ -37,13 +37,65 @@
     }
 }
 
+.nav-wrapper-black{
+    height: 90px;
+    width: 100%;
+    display:contents;
+    
+    
+    nav{
+    width: 100%;
+    height: 130px;
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo{
+        width: 200px;
+        height: 100px;
+        background-image: url(../Logo/IndianaAveLogo-blk.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+    }
+
+
+    .links{
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        }
+    }
+}
+
 .nav-mobile-wrapper{
     visibility: hidden;
     height: 74px;
     width: 100%;
-    background-color: red;
+    background-color: #D2BFA1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 
+}
+
+.mobile-icon{
+    height: 50px;
+    width: 100px;
+    margin-right: 10px;
+    background-image: url(../Logo/IndianaAveLogo-blk.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 #ham-icon{
@@ -57,9 +109,10 @@
     width: 55px;
     height: 10px;
     border-radius: 38px;
-    background-color: white;
+    background-color: #644536;
     margin: 10px 0;
     transition: 0.4s;
+    margin-left: 10px;
 }
 
 
@@ -68,6 +121,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 1000px;
 }
 
 .mobile-menu{
@@ -75,9 +129,21 @@
     position: absolute;
     top: 75px;
     left: 0;
-    height: 100%;
+    height: 0px;
     width: 100%;
-    background-color: green;
+    background-color: gray;
+    z-index:99;
+    li{
+        list-style-type: none;
+        margin: 20px;
+    }
+    a{
+        color: white;
+        font-size: 20px;
+        font-family: LM;
+        text-decoration: none;
+        
+    }
     
 }
 
@@ -88,6 +154,10 @@
     .nav-wrapper{
         display: none;
     }
+
+    .nav-wrapper-black{
+        display: none;
+    }
     
 }
 
@@ -95,6 +165,7 @@
     
     .nav-mobile-wrapper{
         visibility: visible;
+       
     }
     
 }

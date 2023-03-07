@@ -40,11 +40,72 @@
   font-size: 20px;
 }
 
+.nav-wrapper-black {
+  height: 90px;
+  width: 100%;
+  display: contents;
+}
+.nav-wrapper-black nav {
+  width: 100%;
+  height: 130px;
+  border-bottom: solid 2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-wrapper-black nav .logo {
+  width: 200px;
+  height: 100px;
+  background-image: url(../Logo/IndianaAveLogo-blk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+.nav-wrapper-black nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav-wrapper-black nav .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .nav-mobile-wrapper {
   visibility: hidden;
   height: 74px;
   width: 100%;
-  background-color: red;
+  background-color: #D2BFA1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-icon {
+  height: 50px;
+  width: 100px;
+  margin-right: 10px;
+  background-image: url(../Logo/IndianaAveLogo-blk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #ham-icon {
@@ -57,10 +118,11 @@
   width: 55px;
   height: 10px;
   border-radius: 38px;
-  background-color: white;
+  background-color: #644536;
   margin: 10px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-left: 10px;
 }
 
 .open .mobile-menu {
@@ -77,6 +139,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 1000px;
 }
 
 .mobile-menu {
@@ -84,13 +147,27 @@
   position: absolute;
   top: 75px;
   left: 0;
-  height: 100%;
+  height: 0px;
   width: 100%;
-  background-color: green;
+  background-color: gray;
+  z-index: 99;
+}
+.mobile-menu li {
+  list-style-type: none;
+  margin: 20px;
+}
+.mobile-menu a {
+  color: white;
+  font-size: 20px;
+  font-family: LM;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
   .nav-wrapper {
+    display: none;
+  }
+  .nav-wrapper-black {
     display: none;
   }
 }
@@ -123,18 +200,6 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
-}
-
-.containter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hero {
@@ -185,6 +250,34 @@ p {
 .login a {
   text-decoration: none;
   color: white;
+  font-size: 20px;
+}
+
+.login-black {
+  position: absolute;
+  top: 150px;
+  width: 100px;
+  right: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: visible;
+}
+.login-black a {
+  text-decoration: none;
+  color: black;
+  font-family: LM;
   font-size: 20px;
 }
 
@@ -298,7 +391,7 @@ p {
   #image3 {
     left: 180px;
     top: 399px;
-    width: 235px;
+    width: 213px;
     height: 201px;
   }
   .hero-text {
