@@ -72,8 +72,20 @@
         text-decoration: none;
         color: white;
         font-size: 20px;
+        font-family: LM;
     }
+
+    
 }
+
+.login:hover{
+    a{
+        font-family: LMB;
+    }
+    
+}
+
+
 
 .login-black{
     position: absolute;
