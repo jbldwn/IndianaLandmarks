@@ -3,6 +3,9 @@
     flex-direction: column;
 }
 
+.login-black{
+  visibility: visible;
+}
 .login-base{
     width: 100%;
     height: 500px;
@@ -14,7 +17,7 @@
 
     .login-img{
         width: 1000px;
-        height: 400px;
+        height: 600px;
         background-image: url(../images/Hero.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -52,7 +55,7 @@
           }
         input[type=submit] {
             width: 150px;
-            background-color: #644536;
+            background-color: #F48026;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -62,7 +65,41 @@
           }
           
           input[type=submit]:hover {
-            background-color: #3b2a22;
+            background-color: rgb(117, 59, 29);
+          }
+          
+          a{
+            text-decoration: none;
+            color: black;
+            font-family: LM;
+            font-size: 15px;
           }
     }
+}
+
+@media (max-width: 600px){
+    .login-base{
+    
+    
+      .login-img{
+          margin-top: 50px;
+          width: 400px;
+          height: 300px;
+      }
+
+      form{
+        width: 350px;
+
+        label{
+          margin-right: 310px;
+        }
+      }
+    }
+  
+
+
+  .login-black{
+    visibility: hidden;
+  }
+  
 }

@@ -155,7 +155,7 @@
   left: 0;
   height: 0px;
   width: 100%;
-  background-color: gray;
+  background-color: #9BBE55;
   z-index: 99;
 }
 .mobile-menu li {
@@ -630,7 +630,6 @@ body {
 .footer .footer-icons {
   height: 200px;
   width: 200px;
-  background-color: red;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -651,12 +650,29 @@ body {
 
 @media (max-width: 600px) {
   .footer {
-    height: 529px;
+    height: 330px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 200px 200px;
-    grid-template-columns: 200px 200px;
+    -ms-grid-columns: 100px 100px;
+    grid-template-columns: 100px 100px;
     grid-row: auto auto;
+  }
+  .footer .logo {
+    width: 100px;
+    height: 50px;
+    background-image: url(../Logo/IndianaAveLogo-wht.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer .footer-con {
+    height: 150px;
+  }
+  .footer .footer-icons {
+    height: 150px;
+    width: 100px;
+    -ms-grid-columns: 70px 70px;
+    grid-template-columns: 70px 70px;
   }
 }
 .ld {
@@ -785,6 +801,10 @@ body {
           flex-direction: column;
 }
 
+.login-black {
+  visibility: visible;
+}
+
 .login-base {
   width: 100%;
   height: 500px;
@@ -804,7 +824,7 @@ body {
 }
 .login-base .login-img {
   width: 1000px;
-  height: 400px;
+  height: 600px;
   background-image: url(../images/Hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -852,7 +872,7 @@ body {
 }
 .login-base form input[type=submit] {
   width: 150px;
-  background-color: #644536;
+  background-color: #F48026;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -861,5 +881,95 @@ body {
   cursor: pointer;
 }
 .login-base form input[type=submit]:hover {
-  background-color: #3b2a22;
+  background-color: rgb(117, 59, 29);
+}
+.login-base form a {
+  text-decoration: none;
+  color: black;
+  font-family: LM;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .login-base .login-img {
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+  }
+  .login-base form {
+    width: 350px;
+  }
+  .login-base form label {
+    margin-right: 310px;
+  }
+  .login-black {
+    visibility: hidden;
+  }
+}
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.contact-info {
+  height: 600px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+.contact-info h1 {
+  font-family: LM;
+}
+.contact-info #contact-para {
+  margin-top: 50px;
+  width: 400px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form {
+  height: 600px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-form .contact-input {
+  height: 60px;
+  width: 529px;
+  padding: 10px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+}
+.contact-form .contact-input2 {
+  height: 199px;
+  width: 529px;
+  padding: 10px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
 }
