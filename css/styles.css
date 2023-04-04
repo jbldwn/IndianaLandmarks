@@ -214,8 +214,8 @@ body {
   background-color: aqua;
   height: 500px;
   width: 1590px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 128, 38, 0.5)), to(rgba(244, 128, 38, 0.5))), url(../images/Hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(244, 128, 38, 0.5), rgba(244, 128, 38, 0.5)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 128, 38, 0.5)), to(rgba(244, 128, 38, 0.5))), url(../assets/images/Hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(244, 128, 38, 0.5), rgba(244, 128, 38, 0.5)), url(../assets/images/Hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,8 +341,8 @@ body {
   height: 208px;
   width: 304px;
   background-color: red;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(187, 214, 134, 0.5)), to(rgba(187, 214, 134, 0.5))), url(../images/Hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(187, 214, 134, 0.5), rgba(187, 214, 134, 0.5)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(187, 214, 134, 0.5)), to(rgba(187, 214, 134, 0.5))), url(../assets/images/CJ.jpg);
+  background-image: linear-gradient(to bottom, rgba(187, 214, 134, 0.5), rgba(187, 214, 134, 0.5)), url(../assets/images/CJ.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,8 +351,8 @@ body {
   height: 208px;
   width: 304px;
   background-color: purple;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 3, 45, 0.5)), to(rgba(11, 3, 45, 0.5))), url(../images/Hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(11, 3, 45, 0.5), rgba(11, 3, 45, 0.5)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 3, 45, 0.5)), to(rgba(11, 3, 45, 0.5))), url(../assets/images/People.png);
+  background-image: linear-gradient(to bottom, rgba(11, 3, 45, 0.5), rgba(11, 3, 45, 0.5)), url(../assets/images/People.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -365,8 +365,8 @@ body {
   left: 352px;
   height: 416px;
   background-color: rebeccapurple;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 69, 54, 0.5)), to(rgba(100, 69, 54, 0.5))), url(../images/Hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(100, 69, 54, 0.5), rgba(100, 69, 54, 0.5)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 69, 54, 0.5)), to(rgba(100, 69, 54, 0.5))), url(../assets/images/MWT.jpg);
+  background-image: linear-gradient(to bottom, rgba(100, 69, 54, 0.5), rgba(100, 69, 54, 0.5)), url(../assets/images/MWT.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -418,11 +418,11 @@ body {
 }
 @font-face {
   font-family: LM;
-  src: url(../Fonts/lemon_milk/LEMONMILK-Light.otf);
+  src: url(../assets/Fonts/lemon_milk/LEMONMILK-Light.otf);
 }
 @font-face {
   font-family: LMB;
-  src: url(../Fonts/lemon_milk/LEMONMILK-Bold.otf);
+  src: url(../assets/Fonts/lemon_milk/LEMONMILK-Bold.otf);
 }
 .about {
   display: -webkit-box;
@@ -441,8 +441,8 @@ body {
   background-color: aqua;
   height: 623px;
   width: 960px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 73, 129, 0.5)), to(rgba(83, 73, 129, 0.5))), url(../images/Hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(83, 73, 129, 0.5), rgba(83, 73, 129, 0.5)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 73, 129, 0.5)), to(rgba(83, 73, 129, 0.5))), url(../assets/images/street.jpg);
+  background-image: linear-gradient(to bottom, rgba(83, 73, 129, 0.5), rgba(83, 73, 129, 0.5)), url(../assets/images/street.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
