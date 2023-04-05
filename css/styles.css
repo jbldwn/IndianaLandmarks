@@ -20,7 +20,7 @@
 .nav-wrapper nav .logo {
   width: 200px;
   height: 100px;
-  background-image: url(../Logo/IndianaAveLogo-wht.png);
+  background-image: url(../assets/Logo/IndianaAveLogo-wht.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +65,7 @@
 .nav-wrapper-black nav .logo {
   width: 200px;
   height: 100px;
-  background-image: url(../Logo/IndianaAveLogo-blk.png);
+  background-image: url(../assets/Logo/IndianaAveLogo-blk.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +108,7 @@
   height: 50px;
   width: 100px;
   margin-right: 10px;
-  background-image: url(../Logo/IndianaAveLogo-blk.png);
+  background-image: url(../assets/Logo/IndianaAveLogo-blk.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -617,7 +617,7 @@ body {
 .footer .logo {
   width: 200px;
   height: 100px;
-  background-image: url(../Logo/IndianaAveLogo-wht.png);
+  background-image: url(../assets/Logo/IndianaAveLogo-wht.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -660,7 +660,7 @@ body {
   .footer .logo {
     width: 100px;
     height: 50px;
-    background-image: url(../Logo/IndianaAveLogo-wht.png);
+    background-image: url(../assets/Logo/IndianaAveLogo-wht.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -683,9 +683,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 100px;
 }
 
@@ -706,7 +703,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
+  margin-right: 10px;
 }
 .ld-map #ld-map {
   height: 100%;
@@ -723,6 +720,7 @@ body {
 .ld-sites {
   height: 600px;
   width: 500px;
+  background-color: palegoldenrod;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,10 +739,12 @@ body {
 }
 .ld-sites .ld-site-head {
   height: 25px;
+  background-color: rebeccapurple;
   font-size: 20px;
 }
 .ld-sites .ld-site-add {
   height: 25px;
+  background-color: aqua;
 }
 .ld-sites #site2 {
   width: 100%;
@@ -972,4 +972,110 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 30px;
+}
+
+.ld-detail {
+  width: 500px;
+  background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.ld-chapters {
+  width: 500px;
+  background-color: palegoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ld-hero {
+  height: 300px;
+  width: 500px;
+  background-color: red;
+}
+
+.ld-address {
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+}
+
+.ld-historical {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+}
+
+.ld-current {
+  width: 100%;
+  height: 50px;
+  background-color: green;
+}
+
+.ld-des {
+  width: 100%;
+  height: 250px;
+  background-color: palevioletred;
+}
+
+.ld-banner {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+.ld-grid {
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 225px 200px;
+  grid-template-columns: 225px 200px;
+  -ms-grid-rows: 225px;
+  grid-template-rows: 225px;
+  background-color: yellow;
+}
+
+.ld-grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.ld-grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.ld-photo {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.ld-audio {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+}
+
+.ld-chapter-detail {
+  width: 100%;
+  height: 300px;
+  background-color: red;
 }

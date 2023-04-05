@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
    
 }
@@ -20,7 +19,7 @@
     
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin-right: 10px;
 
     #ld-map{
         height: 100%;
@@ -36,7 +35,7 @@
 .ld-sites{
     height: 600px;
     width: 500px;
-    
+    background-color: palegoldenrod;
     display: flex;
     flex-direction: column;
 
@@ -53,12 +52,12 @@
     }
 .ld-site-head{
           height: 25px;
-          
+          background-color: rebeccapurple;
           font-size: 20px;
         }
 .ld-site-add{
     height: 25px;
-    
+    background-color: aqua;
 }
     #site2{
         width: 100%;
