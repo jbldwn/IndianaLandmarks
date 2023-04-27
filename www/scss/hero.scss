@@ -1,0 +1,107 @@
+.hero{
+    height: 470px;
+    width: 100%;
+    background-image: linear-gradient($btOrgA, $btOrgA), url(../assets/images/Hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    margin-bottom: 120px;
+    
+
+    .collage{
+        display: flex;
+        justify-content: left;
+        padding: 0 30px;
+        height: 280px;
+        width: 55%;
+    
+        .hero-images{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 38%;
+            
+            .image{
+                height: 152px;
+                width: 100%;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &-Top{
+                    background-image: linear-gradient($ltGrnA, $ltGrnA),
+                    url(../assets/images/CJ.jpg);    
+                }
+                &-Bottom{
+                    background-image: linear-gradient($drkBluA,$drkBluA), url(../assets/images/People.png);
+                }
+            }
+        }  
+        .image3{
+            width: 62%;
+            height: 100%;
+            background-image: linear-gradient($drkBrnA,$drkBrnA), url(../assets/images/MWT.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+        
+    }
+    .hero-text{
+        filter:drop-shadow(0 5px 5px $drkBrn);
+        position: absolute;
+        top: 310px;
+        right: 30px;
+        width: 350px;
+        font-family: LM;
+        color:$siteWhite;
+        font-size: 50px;
+        text-align: right;
+        span{
+            font-family: LMI;
+            filter:drop-shadow(0 5px 10px $drkBrn);
+        }
+    }
+}
+
+@media (max-width: $mobileWidth){
+    
+    .hero{
+        height: 380px;
+        margin: 10px auto 100px;
+        width: 95vw;
+
+        .pageHeader{
+            width: fit-content;
+            margin: 10px auto;
+            padding: 0;
+            align-content: center;
+        }
+
+        .collage{
+            //width: 90vw;
+            height: 260px;
+            width: 65%;
+
+            position:absolute;
+            top: 180px;
+            left: 0px;
+
+        }
+        .hero-text{
+            width: 50%;
+            font-size: 35px;
+            top: 240px;
+            right: 0px;
+            text-align: center;
+            color: $siteWhite;
+            filter: drop-shadow(0 5px 10px $drkBlu);
+        }
+    }
+}

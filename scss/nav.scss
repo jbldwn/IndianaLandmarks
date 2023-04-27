@@ -1,131 +1,198 @@
-.nav-wrapper{
-    height: 90px;
+.nav-white{
     width: 100%;
-    display:contents;
-    
-    
-    nav{
-    width: 100%;
-    height: 130px;
-    border-bottom: solid 2px white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .mobile{
+        padding: 10px 30px;
+        width: available;
 
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        #ham-icon{
+            height: 50px;
+            width: 65px;
 
-    .logo{
-        width: 200px;
-        height: 100px;
-        background-image: url(../assets/Logo/IndianaAveLogo-wht.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .bar{
+                width: 100%;
+                height: 25%;
+                border-radius: 38px;
+                background-color: $siteWhite;
+                transition: 0.4s;
+            }
+        }
+        .mobile-icon{
+            width: 110px;
+            height: 56px;
+            background-image: url(../assets/Logo/IndianaAveLogo-wht.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
+    .web{
+        nav{
+            padding: 30px 0;
+            border-bottom: solid 2px $siteWhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
 
+            .links{
+                margin-left:30px;
+                width: 65%;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: $siteWhite;
+                    font-size: 18px;
+                    font-family: LM;
+                }
 
-    .links{
-        width: 350px;
-        display: flex;
-        justify-content: space-around;
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
+                a:hover{
+                    font-family: LMB;
+                    font-size: 18px;
+                }
+            }
+            .logo{
+                margin-right:30px;
+                width: 110px;
+                height: 56px;
+                background-image: url(../assets/logo/IndianaAveLogo-wht.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
+        .user-panel{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
 
-        a:hover{
-            font-family: LMB;
-        }
-        }
+            .greeting{
+                margin-left: 30px;
+                color: $siteWhite;
+            }
+            .ctrls{
+                margin-right: 30px;
+                color: $siteWhite;
 
+                button{
+                    width: 110px;
+                    height: 45px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.nav-black{
+    .mobile{
+        padding: 10px 30px;
+        width: 100%;
+        background-color: $siteWhite;
+
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        #ham-icon{
+            height: 50px;
+            width: 65px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .bar{
+                width: 100%;
+                height: 25%;
+                border-radius: 38px;
+                background-color: $siteBlack;
+                transition: 0.4s;
+            }
+        }
+        .mobile-icon{
+            width: 110px;
+            height: 56px;
+            background-image: url(../assets/Logo/IndianaAveLogo-blk.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .web{
         
-    }
-}
+        nav{
+            padding: 30px 0;
+            border-bottom: solid 2px $siteBlack;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
 
-.nav-wrapper-black{
-    height: 90px;
-    width: 100%;
-    display:contents;
-    
-    
-    nav{
-    width: 100%;
-    height: 130px;
-    border-bottom: solid 2px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+            .links{
+                margin-left:30px;
+                width: 65%;
+                display: flex;
+                justify-content: space-between;
 
+                a{
+                    text-decoration: none;
+                    color: $siteBlack;
+                    font-size: 18px;
+                    font-family: LM;
+                }
 
-    .logo{
-        width: 200px;
-        height: 100px;
-        background-image: url(../assets/Logo/IndianaAveLogo-blk.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-right: 20px;
-    }
-
-
-    .links{
-        width: 350px;
-        display: flex;
-        justify-content: space-around;
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
+                a:hover{
+                    font-family: LMB;
+                    font-size: 18px;
+                }
+            }
+            .logo{
+                margin-right:30px;
+                width: 110px;
+                height: 56px;
+                background-image: url(../assets/logo/IndianaAveLogo-blk.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
-        a:hover{
-            font-family: LMB;
-        }
-        }
+        .user-panel{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
 
-        
+            .greeting{
+                margin-left: 30px;
+                color: $siteBlack;
+            }
+            .ctrls{
+                margin-right: 30px;
+                color: $siteWhite;
+
+                button{
+                    width: 110px;
+                    height: 45px;
+                    margin-left: 10px;
+
+                }
+
+            }
+
+        }
     }
-}
-
-.nav-mobile-wrapper{
-    visibility: hidden;
-    height: 74px;
-    width: 100%;
-    background-color: #D2BFA1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 
 }
-
-.mobile-icon{
-    height: 50px;
-    width: 100px;
-    margin-right: 10px;
-    background-image: url(../assets/Logo/IndianaAveLogo-blk.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-}
-
-#ham-icon{
-    float: right;
-    display: none;
-    cursor: pointer;
-    
-}
-
-#ham-icon div{
-    width: 55px;
-    height: 10px;
-    border-radius: 38px;
-    background-color: #644536;
-    margin: 10px 0;
-    transition: 0.4s;
-    margin-left: 10px;
-}
-
 
 .open .mobile-menu {
     display: flex;
@@ -140,54 +207,48 @@
     position: absolute;
     top: 75px;
     left: 0;
-    height: 0px;
     width: 100%;
-    background-color: #9BBE55;
+    background-color: $btOrgAA;
     z-index:99;
+    padding-top: 20vh;
     li{
         list-style-type: none;
         margin: 20px;
     }
+
     a{
-        color: white;
+        color: $siteWhite;
         font-size: 20px;
         font-family: LM;
         text-decoration: none;
-        
     }
+
     a:hover{
         font-family: LMB;
     }
-    
 }
 
 
+@media (max-width: $mobileWidth){
 
-@media (max-width: 600px){
-    
-    .nav-wrapper{
-        display: none;
+    .nav-black{
+        .web{
+            display: none;
+        }
+
+        .mobile{
+            display: flex;
+        }
     }
 
-    .nav-wrapper-black{
-        display: none;
+    .nav-white{
+        .web{
+            display: none;
+        }
+
+        .mobile{
+            display: flex;
+        }
     }
-    
+
 }
-
-@media (max-width: 600px){
-    
-    .nav-mobile-wrapper{
-        visibility: visible;
-       
-    }
-    
-}
-
-#ham-icon{
-    display: block;
-}
-
-
-
- 

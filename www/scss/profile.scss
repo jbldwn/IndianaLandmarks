@@ -1,0 +1,108 @@
+.profile {
+  .header{
+    padding: 0 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    margin: 15px 0 20px;
+
+    .title{
+      margin-bottom: 0;
+      font-family: LM;
+      font-size: 24px;
+    }
+
+  }
+  .details{
+    margin: 20px 0 50px;
+    .row{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 60px 10px;
+
+      .column{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+
+      }
+      .permissions{
+        width: 48%;
+        .label{
+          margin-bottom: 15px;
+        }
+        .permission{
+          margin: 0 0  10px 30px;
+          i{
+            margin-top: 1%;
+            height:50%;
+          }
+          .yes{
+            color: $saveColor;
+          }
+          .no{
+            color:$deleteColor;
+          }
+        }
+      }
+      .ctrls{
+        position: relative;
+        a{
+          position: absolute;
+          right: 0;
+          bottom:0;
+          button {
+            padding: 0 15px;
+            height: 45px;
+            margin-left: 10px;
+
+            .button-icon {
+              width: 20px;
+              height: 20px;
+              border-radius: 10px;
+              background-color: #fff;
+
+              i {
+                color: $saveColor;
+                margin: 25% auto;
+              }
+
+            }
+
+            span {
+              height: 20px;
+            }
+          }
+        }
+        input {
+          padding: 0 15px;
+          height: 45px;
+          margin-left: 100%;
+          margin-right: 60px;
+          border-radius: 23px;
+          color: $siteWhite;
+          font-family: LM;
+        }
+      }
+    }
+
+    .input{
+      font-family: NeuReg;
+      font-size: 24px;
+    }
+    .label{
+      font-family: LM;
+      font-size: 12px;
+    }
+    input{
+      border: solid 1px $btOrg;
+      height: 30px;
+      border-radius: 15px;
+      padding: 15px;
+    }
+    label{
+      padding: 0 15px;
+    }
+  }
+}

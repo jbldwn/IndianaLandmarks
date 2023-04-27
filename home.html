@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indiana Avenue Home Prototype</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="www/css/styles.css">
+    <script src="https://kit.fontawesome.com/d22db5bb67.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <link rel="stylesheet" href="./www/css/flickity.css" media="screen">
+    <script src="./js/flickity.pkgd.min.js"></script>
 </head>
 <body>
-    <div class="containter">
-            <div class="hero">
-            <div class="nav-wrapper">
-                <nav>
-                    <div class="links">
-                        <a href="home.html">Home</a>
-                        <a href="landmarks.html">Landmarks</a>
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                        <div class="logo">  
-                    </div>
-                    
-                </nav>
-            </div>
-            <div class="nav-mobile-wrapper">
+    
+<div class="container">
+
+    <div class="hero">
+        <div class="nav-white">
+            <div class="mobile">
                 <div id="ham-icon" onclick="toggleMenu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                     <ul class="mobile-menu">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="landmarks.html">Landmarks</a></li>
@@ -35,57 +30,114 @@
                     </ul>
                 </div>
                 <div class="mobile-icon"></div>
-                
             </div>
-            <div class="login">
-                <a href="login.html">Login</a>
+            <div class="web">
+                <nav>
+                    <div class="links">
+                        <a href="home.html">Home</a>
+                        <a href="home.html#about">About</a>
+                        <a href="landmarks.html">Landmarks</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="logo"></div>
+                </nav>
+                </div>
             </div>
-            <div class="cen-content">
-                <h1>Indiana Avenue</h1>
-            </div>
-            <div class="hero-images">
-                <div id="image1"></div>  
-                <div id="image2"></div> 
-            </div>
-            <div id="image3"></div>
-            <h1 class="hero-text">Our history remembered</h1>
-        </div>
-        
-    </div>
-    <div class="about">
-            <div class="about-img"></div>
-            <div class="about-con">
-                <h1 id="about-head">About US</h1>
-                <p id="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit. Sed odio morbi quis commodo odio aenean sed adipiscing diam. 
-                    Sit amet consectetur adipiscing elit. Donec ac odio tempor orci dapibus ultrices. Non odio euismod lacinia at quis risus sed vulputate. 
-                    <br>
-                    <br>
-                    Urna molestie at elementum eu facilisis sed odio. 
-                    Sit amet consectetur adipiscing elit. Donec ac odio tempor orcidapibus ultrices. Non odio euismod lacinia at quis risus sed vulputate. Urna molestie at elementum eu facilisis sed odio. 
-                    </p>
-                <a href=""><button id="about-button">Experience the Ave</button></a>
-            </div>
-        </div>
-    <div class="home-sites">
-        <h1 id="sites-head">Featured Sites</h1>
-        <div class="site">
-            <div id="site-img"></div>
-            <div id="site-name"></div>
-            <div id="site-add"></div>
+        <div class="pageHeader">
+                    <h1>Indiana Avenue</h1>
+                </div>
+                <div class="collage">
+                    <!-- space for images -->
+                    <div class="hero-images">
+                        <div class="image image-Top"></div>
+                        <div class="image image-Bottom"></div>
+                    </div>
+                    <div class="image3"></div>
+                </div>
+                <div class="hero-text">Our history <span>remembered</span></div>
+
         </div>
     </div>
 
-    <div class="footer">
-        <div class="logo"></div>
-        <div class="footer-con"></div>
-        <div class="footer-con"></div>
-        <div class="footer-icons">
-            <div id="icon"></div>
-            <div id="icon"></div>
-            <div id="icon"></div>
-            <div id="icon"></div>
+        
+        
+
+
+        
+                    <section id="about">
+                        <div class="img"></div>
+                        <div class="container about">
+                            <div class="about-con">
+                                <h1 class="about-con-header">About US</h1>
+                                <p class="about-con-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit. Sed odio morbi quis commodo odio aenean sed adipiscing diam.
+                                Sit amet consectetur adipiscing elit. Donec ac odio tempor orci dapibus ultrices. Non odio euismod lacinia at quis risus sed vulputate.
+                                    <br>
+                                    <br>
+                                    Urna molestie at elementum eu facilisis sed odio.
+                                    Sit amet consectetur adipiscing elit. Donec ac odio tempor orcidapibus ultrices. Non odio euismod lacinia at quis risus sed vulputate. Urna molestie at elementum eu facilisis sed odio.
+                                </p>
+                                <a href="landmarks.php" class="ctrls">
+                                    <button class="about-button">
+                                        <i class="fa-solid fa-map-location-dot  fa-xl"></i>
+                                        <span>Experience the Ave</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="home-sites">
+                        <h1 id="sites-head">Featured Sites</h1>
+                    
+                        <!-- Flickity HTML init -->
+                        <div class="gallery js-flickity"
+                             data-flickity-options='{ "wrapAround": true }'>
+                            
+                            <a style="text-decoration: none; color: black"  href="">
+                                <div class="gallery-cell">
+                                    <div id="site-img" style=" background-size:cover; background-position: top;  background-repeat: no-repeat; background-image: url();"></div>
+                                    <div id="site-name" >Help</div>
+                                    <div id="site-add">Help</div>
+                                </div>
+                            </a>
+                            <a style="text-decoration: none; color: black"  href="">
+                                <div class="gallery-cell">
+                                    <div id="site-img" style=" background-size:cover; background-position: top;  background-repeat: no-repeat; background-image: url();"></div>
+                                    <div id="site-name" >Help</div>
+                                    <div id="site-add">Help</div>
+                                </div>
+                            </a>
+                            <a style="text-decoration: none; color: black"  href="">
+                                <div class="gallery-cell">
+                                    <div id="site-img" style=" background-size:cover; background-position: top;  background-repeat: no-repeat; background-image: url();"></div>
+                                    <div id="site-name" >Help</div>
+                                    <div id="site-add">Help</div>
+                                </div>
+                            </a>
+                            
+                            
+                    
+                        </div>
+                    </div>
+    <footer>
+        <div class="footer container">
+            <div class="logo"></div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </div>
+            <div class="footer-nav">
+                <h3>Site-Map:</h3>
+                <a href="index.php">Home</a>
+                <a href="index.php#about">About</a>
+                <a href="landmarks.php">Landmarks</a>
+                <a href="contact.php">Contact</a>
+                <a id="maintenance" href="login.php">Maintenance</a>
+            </div>
         </div>
-    </div>
-    <script src="./js/menu.js"></script>
+    </footer>
+    <script src="www/js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  //border: red solid 1px;
+}
+html,body {
+ height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+.container{
+  margin: 0 auto;
+  
+  width: 70vw;
+  max-width: 1000px;
+}
+
+.pageHeader{
+  //margin-top: 50px;
+  padding-left: 30px;
+
+  h1{
+    filter:drop-shadow(0 5px 5px $drkBrn);
+    color: $siteWhite;
+    font-family: LM;
+    font-size: 50px;
+  }
+}
+
+.ctrls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 38px;
+    border: none;
+    color: $siteWhite;
+    font-family: LM;
+    background-color: $genericColor;
+    span{
+      margin-left: 5px;
+    }
+
+  }
+  button:hover{
+    background-color: $genericHoverColor;
+  }
+  .edit{
+    background-color: $editColor;
+  }
+  .edit:hover{
+    background-color: $editHoverColor;
+  }
+  .save{
+    background-color: $saveColor;
+  }
+  .save:hover{
+    background-color: $saveHoverColor;
+  }
+  .delete{
+    background-color: $deleteColor;
+  }
+  .delete:hover{
+    background-color: $deleteHoverColor;
+  }
+}
+
+
+@media (max-width: $mobileWidth){
+  .ctrls{
+    display: none;
+  }
+  .container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

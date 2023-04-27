@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landmarks</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title><?= $page_title?></title>
+    <link rel="stylesheet" href="www/css/styles.css">
+    <script src="https://kit.fontawesome.com/d22db5bb67.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <link rel="stylesheet" href="./www/css/flickity.css" media="screen">
+    <script src="./js/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <div class="containter-landmarks">
@@ -69,17 +73,25 @@
            
         </div>
 
-        <div class="footer">
-            <div class="logo"></div>
-            <div class="footer-con"></div>
-            <div class="footer-con"></div>
-            <div class="footer-icons">
-                <div id="icon"></div>
-                <div id="icon"></div>
-                <div id="icon"></div>
-                <div id="icon"></div>
+        <footer>
+            <div class="footer container">
+                <div class="logo"></div>
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </div>
+                <div class="footer-nav">
+                    <h3>Site-Map:</h3>
+                    <a href="index.php">Home</a>
+                    <a href="index.php#about">About</a>
+                    <a href="landmarks.php">Landmarks</a>
+                    <a href="contact.php">Contact</a>
+                    <a id="maintenance" href="login.php">Maintenance</a>
+                </div>
             </div>
-        </div>
-        <script src="./js/menu.js"></script>
+        </footer>
+        <script src="www/js/menu.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </body>
 </html>
